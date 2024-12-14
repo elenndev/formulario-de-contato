@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato via WhatsApp</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <h1>Exemplo funcional de formulário de contato</h1>
+        <p>Uma simulação do formulário pra contato que os seus clientes vão usar para entrar em contato com você no formulário do seu site</p>
+
+    </div>
+    <form id="infoForm">
+        <h2><strong>Primeiro informe o seu número e email aqui, esse é o número/email que  recebe a mensagem.</strong></h2>
+        <p>Você pode usar esse número/email novamente no formulário de contato pra simular o seu cliente sem problemas</p>
+        <label for="admTel">Telefone (Por favor informar um número válido e sem espaços)</label>
+        <input type="tel" name="admTel" id="admTel" placeholder="Ex: 55779999999" required>
+        <label for="admEmail">Email (Por favor informar um email válido)</label>
+        <input type="email" name="admEmail" id="admEmail" placeholder="Ex: adm@email.com" required>
+        <span class="buttons">
+            <button type="submit">Salvar número e email</button>
+            <button type="button" class="clean" onclick="cleanForms()">Limpar informações</button>
+        </span>
+    </form>
+    <form class="blockForm contactForm whatsapp">
+        <h3>Contato via WhatsApp</h3>
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+        
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+        
+        <label for="tel">Telefone</label>
+        <input type="text" id="tel" name="tel" placeholder="Seu telefone" required>
+        
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" placeholder="Digite sua mensagem..." rows="4" required></textarea>
+        
+        <button type="submit">Enviar pelo WhatsApp</button>
+    </form>
+    <form class="blockForm contactForm email">
+        <h3>Contato via Email</h2>
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+        
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+        
+        <label for="tel">Telefone</label>
+        <input type="text" id="tel" name="tel" placeholder="Seu telefone" required>
+        
+        <label for="message">Mensagem</label>
+        <textarea id="message" name="message" placeholder="Digite sua mensagem..." rows="4" required></textarea>
+        
+        <button type="submit">Enviar pelo Email</button>
+    </form>
+    <footer><p>Desenvolvido por <a href="https://github.com/elenndev">@elenndev</a></p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
